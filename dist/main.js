@@ -1,0 +1,1 @@
+!async function(e){const a=await fetch("https://api.openweathermap.org/data/2.5/weather?q=Austin&APPID=907b2eb9ee227c9d429014c360e20b7d",{mode:"cors"}),t=await a.json();t.name,t.main.temp,t.main.feels_like,t.weather[0].description,t.main.humidity,t.main.temp_max,console.log(t)}();
