@@ -1,7 +1,10 @@
 //Weather Application JS Index File (import modules)
 
+const cityInput = document.querySelector('#cityName');
+const submit = document.querySelector('#submitButton');
+
 //function for the weather of the city
-const cityWeather = (place, temp, feels_like, desc, humid, max) => {
+function cityWeather (place, temp, feels_like, desc, humid, max) {
   this.place = place;
   this.temp = temp;
   this.feels_like = feels_like;
@@ -23,9 +26,12 @@ async function getWeather(location) {
   const maxTemp = weatherData.main.temp_max;
 
   //Map Temperature data to cityWeather Object
-  cityWeather(city, temperature, feelsLike, description, humidity, maxTemp);
-  console.log(weatherData);
+  const currentCity = new cityWeather(city, temperature, feelsLike, description, humidity, maxTemp);
+  console.log(currentCity);
 }
 
-getWeather("Austin");
+//Searching for the desired city data when the search button is clicked
+submit.addEventListener('click', () => {
+    getWeather(cityInput.value)
+});
 
