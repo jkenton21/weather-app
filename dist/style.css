@@ -27,8 +27,11 @@ body {
 
 #contents {
     background-color: white;
+    background-image: url(./img/anandu-vinod-pbxwxwfI0B4-unsplash.jpg);
     display: grid;
+    height: auto;
     grid-template-columns: 1fr 1fr;
+    color: black;
 }
 
 #todaysWeather {
