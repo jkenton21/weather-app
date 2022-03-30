@@ -19,13 +19,28 @@
             <form id="cityForm">
                 <label for="cityName">City:</label>
                 <input type="text" name="cityName" id="cityName" required>
+                <label for="units">F:</label>
+                <input type="checkbox" name="units" id="units">
                 <button type="button" id="submitButton">Search</button>
             </form>
         </div>
     </div>
     <!--Actual Weather Data will be displayed here-->
     <div id="contents">
-
+        <div id="todaysWeather">
+            <div id="cityNameDisplay">
+                <!--Name of the City will go here-->
+            </div>
+            <div id="cityWeatherDisplay">
+                <!--City weather data will go here-->
+                <div id="cityTemp"></div>
+                <div id="cityFeelsLike"></div>
+                <div id="cityHumidity"></div>
+            </div>
+        </div>
+        <div id="description">
+            <!--Weather forcast description will go here-->
+        </div>
     </div>
     <!--Basic Footer-->
     <div id="footer">
