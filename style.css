@@ -1,1 +1,83 @@
 /*Weather Application CSS Styling Sheet*/
+
+body {
+  width: 100vw;
+  height: 100vw;
+  display: grid;
+  grid-template-rows: 50px auto 25px;
+}
+
+#header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+}
+
+#submitButton {
+    background-color: darkgrey;
+    color: white;
+    border-radius: 5px;
+    border-style: outset;
+}
+
+#contents {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#todaysWeather {
+    background-color: lightgray;
+    opacity: 50%;
+    border-radius: 20px;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 100px auto;
+}
+
+#cityNameDisplay {
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+#cityWeatherDisplay {
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    padding: 20px;
+}
+
+#description{
+    background-color: lightgray;
+    opacity: 50%;
+    border-radius: 20px;
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: 24px;
+    padding: 20px;
+}
+
+#footer {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    font-size: 9px;
+  }
