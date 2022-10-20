@@ -1,10 +1,14 @@
 /*Weather Application CSS Styling Sheet*/
 
 body {
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-rows: 50px auto 25px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: "Ubuntu", serif;
 }
 
 #header {
@@ -12,7 +16,7 @@ body {
   padding: 10px;
   justify-content: space-between;
   align-items: center;
-  font-family: sans-serif;
+  font-family: "Ubuntu", serif;
   font-weight: bold;
   background-color: blue;
   color: white;
@@ -29,7 +33,7 @@ body {
     background-color: white;
     background-image: url(./img/anandu-vinod-pbxwxwfI0B4-unsplash.jpg);
     display: grid;
-    height: auto;
+    height: 100%;
     grid-template-columns: 1fr 1fr;
     color: black;
 }
@@ -44,7 +48,7 @@ body {
 }
 
 #cityNameDisplay {
-    font-family: sans-serif;
+    font-family: "Ubuntu", serif;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -53,7 +57,7 @@ body {
 }
 
 #cityWeatherDisplay {
-    font-family: sans-serif;
+    font-family: "Ubuntu", serif;
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -68,7 +72,7 @@ body {
     opacity: 50%;
     border-radius: 20px;
     margin: 10px;
-    font-family: sans-serif;
+    font-family: "Ubuntu", serif;
     font-size: 24px;
     padding: 20px;
 }
@@ -78,7 +82,7 @@ body {
     padding: 10px;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
+    font-family: "Ubuntu", serif;
     font-weight: bold;
     background-color: blue;
     color: white;
